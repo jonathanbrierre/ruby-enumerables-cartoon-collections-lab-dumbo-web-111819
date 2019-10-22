@@ -9,14 +9,9 @@ end
 
 
 def summon_captain_planet(array)
-  i = 0 
-  while i < array.count do
-    array[i] =yield(array[i])
-    i += 1 
-  end
-  array
+ array.map {|name| name.capitalize +"!" }
 end
-summon_captain_planet.map {|name| name.capitalize +"!" }
+
 
 def long_planeteer_calls# code an argument here
   # Your code here
