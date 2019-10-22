@@ -26,5 +26,7 @@ def find_the_cheese(array)
     array.include?(cheese_types[i])
     i += 1 
   end
+   n = array.find_index {|cheese| cheese_types.include?("#{cheese}") }
+  p array[n]
 end 
 
