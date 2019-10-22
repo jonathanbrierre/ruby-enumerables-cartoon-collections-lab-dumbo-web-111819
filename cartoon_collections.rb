@@ -24,9 +24,6 @@ def find_the_cheese(array)
   i = 0 
   while i < cheese_types.count do 
     array.include?(cheese_types[i])
-    if array.include?(cheese_types[i])
-      p array.detect.include?(cheese_types[i])
-    end
     i += 1 
   end
 end 
