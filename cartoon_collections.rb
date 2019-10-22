@@ -20,12 +20,15 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  i = 0 
-  while i < cheese_types.count do 
-    array.include?(cheese_types[i])
-    if array.include?(cheese_types[i])
-      p array.detect.include?(cheese_types[i])
-    end
-    i += 1 
-  end
-end
+  n = array.find_index {|cheese| cheese_types.include?("#{cheese}")
+  p array[n]
+  # i = 0 
+  # while i < cheese_types.count do 
+  #   array.include?(cheese_types[i])
+  #   if array.include?(cheese_types[i])
+  #     p array.detect.include?(cheese_types[i])
+  #   end
+  #   i += 1 
+  # end
+end 
+
